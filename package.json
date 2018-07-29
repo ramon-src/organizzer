@@ -1,0 +1,27 @@
+{
+  "name": "organizzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "organizzer.js",
+  "dependencies": {
+    "jest": "^23.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramon-src/organizzer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramon-src/organizzer/issues"
+  },
+  "homepage": "https://github.com/ramon-src/organizzer#readme"
+}
