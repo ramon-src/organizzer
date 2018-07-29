@@ -1,7 +1,11 @@
 const Display = class Display {
 
     get get() {
-        return this._display
+        return document.getElementsByClassName('organizzer-column')
+    }
+
+    setVisible() {
+        this.get().style.display = 'block';
     }
 
     set setValue(value) {
@@ -10,7 +14,7 @@ const Display = class Display {
 
     createHtml() {
         this._display = 
-        `<div class="organizzer-container">
+        `<div class="organizzer-container" style="display: none;">
             <input class="organizzer-column" type="number>
             <button class="organizzer-save">V</button>
         </div>`
@@ -21,6 +25,10 @@ const Display = class Display {
     }
 
     init() {
+        let container = document.getElementsByClassName('organizzer-container')
+        if (container) {
+            container.remove()
+        }
         this.createHtml()
         this.appendDisplayToBody() 
         this.setValue = 12
@@ -31,4 +39,4 @@ const Display = class Display {
     }
 }
 
-module.exports = Display
+module.exports = Display[]

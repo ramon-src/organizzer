@@ -1,3 +1,5 @@
+const Display = require('./Display')
+
 class Bootstrapper {
 
     constructor(selector) {
@@ -5,11 +7,14 @@ class Bootstrapper {
     }
 
     start() {
+        display = new Display()
+        display.init()
+
         const containers = document.getElementsByClassName(this._selector)
         
         containers.forEach(element => {
             element.addEventListener('click', () => {
-                             
+                display.setVisible()
             })  
         })
     }
